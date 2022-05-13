@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    cursor: pointer;
+    padding: 10px;
+    margin: 2px 0;
+    background-color: rgb(247, 247, 247);
+    text-decoration: none;
+
+    &:hover {
+      background-color: rgb(237, 236, 236);
+    }
+  }
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 100px;
+
+  &__cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__profile {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 40px;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 40px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+  }
+}
+
+.section-title {
+  font-size: 35px;
+  margin: 80px 40px 50px;
+}
+
+.feed {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0 40px;
+
+  li {
+    width: 31%;
+    background-color: #fff;
+    margin: 10px 1%;
+    padding: 40px;
+  }
+}
+
+form {
+  width: calc(100% - 80px);
+  margin: 80px 40px 0 40px;
+
+  button {
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 20px 50px;
+    background-color: rgb(55, 195, 255);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+
+    &:focus,
+    &:hover {
+      background-color: rgb(48, 183, 241);
+    }
+  }
+}
+
+.new-post {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: none;
+  border-radius: 10px;
+  padding: 40px;
+  font-size: 20px;
+}
